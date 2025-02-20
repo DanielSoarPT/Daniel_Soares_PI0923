@@ -36,4 +36,6 @@ int main(){
 
     printf("\nMaior: %d\nMenor: %d", maior, menor);
 
+    return 0;
+
 }

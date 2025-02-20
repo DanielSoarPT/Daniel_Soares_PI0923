@@ -2,11 +2,16 @@
 
 int main(){
 
-    int Num=0;
-    for(int i=0; i<10; i++){
-        Num+=2;
-        printf("Num = %d, i = %d\n", Num, i);
-        printf("aqui1FOR\n\n");
-    }
+    // Desenvolva um programa que assuma uma entrada em Segundos e transforme em Horas, Minutos e Segundos.
+
+    int segundos;
+
+    printf("Insira a quantidade de segundos: ");
+    scanf("%d", &segundos);
+
+    printf("\nHoras: %d\n", segundos / 3600);
+    printf("Minutos: %d\n", segundos / 60);
+    printf("Segundos: %d", segundos);
+
     return 0;
 }

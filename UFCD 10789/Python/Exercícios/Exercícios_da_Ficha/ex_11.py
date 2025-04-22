@@ -9,7 +9,7 @@ while True:
     try:
         print("Insira um numero")
         num = int(input(">> "))
-        print("")
+        print()
     except ValueError:
         print("\nInsira um numero valido\n")
         continue

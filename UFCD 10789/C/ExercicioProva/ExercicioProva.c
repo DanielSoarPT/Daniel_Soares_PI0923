@@ -1,12 +1,13 @@
+// Crie um programa que leia a nota de 10 alunos, calcule a média
+// e mostre essa média e mostre também quantos alunos ficaram com a sua nota igual ou acima da média. (NOTAS de 0 a 20).
+
 #include <stdio.h>
 
 int main(){
 
-    // Crie um programa que leia a nota de 10 alunos, calcule a média
-    // e mostre essa média e mostre também quantos alunos ficaram com a sua nota igual ou acima da média. (NOTAS de 0 a 20).
-
     float notas[10];
-    float soma, media;
+    float soma = 0;
+    float media = 0;
     int alunos = 0;
 
     for(int i = 0; i < 10; i++){

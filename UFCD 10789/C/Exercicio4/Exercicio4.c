@@ -1,12 +1,14 @@
+// Fazer um algoritmo que leia o saldo inicial de cliente do banco e leia tambem um cheque que entrou e ANALISE
+// se o cheque podera ser descontado ou nao, ja que este cliente nao possui limite. Se o cheque nao podera ser
+// descontado, mostre essa informacao, caso contrario, desconte o cheque e informe o saldo.
+
 #include <stdio.h>
 
 int main(){
 
-    // Fazer um algoritmo que leia o saldo inicial de cliente do banco e leia também um cheque que entrou e ANALISE
-    // se o cheque poderá ser descontado ou não, já que este cliente não possui limite. Se o cheque não poderá ser
-    // descontado, mostre essa informação, caso contrário, desconte o cheque e informe o saldo.
-
-    int saldo, cheque, total;
+    int saldo = 0;
+    int cheque = 0;
+    int total = 0;
 
     printf("Insira o seu saldo: ");
     scanf("%d", &saldo);

@@ -1,13 +1,12 @@
+// Ler 10 números, e determinar o número par e numero impar….
+
 #include <stdio.h>
 
 int main(){
 
-    // Ler 10 números, e determinar o número par e numero impar….
+    int num = 0;
 
-    int num;
-
-    for(int
-        i = 1; i<=10; i++){
+    for(int i = 1; i<=10; i++){
         printf("Insira o numero %d: ", i);
         scanf("%d", &num);
         if(num % 2 == 0){

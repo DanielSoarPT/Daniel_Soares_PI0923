@@ -1,10 +1,12 @@
+// Ler 3 valores INTEIROS para as variaveis Num1, Num2, Num3. Apresentar os valores dispostos em ordem crescente e decrescente.
+
 #include <stdio.h>
 
 int main(){
 
-    // Ler 3 valores INTEIROS para as variáveis Num1, Num2, Num3. Apresentar os valores dispostos em ordem crescente e decrescente.
-
-    int num1, num2, num3, temp;
+    int num1 = 0;
+    int num2 = 0;
+    int num3 = 0;
 
     printf("Insira o valor para o num1: ");
     scanf("%d", &num1);

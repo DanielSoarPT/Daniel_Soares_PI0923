@@ -1,11 +1,12 @@
+// Ler para uma variável INTEIRA um número de 1 a 12 e mostrar o nome do mês correspondente.
+// Caso o mês não existir, mostrar essa informação.
+
 #include <stdio.h>
 
 int main(){
 
-    // Ler para uma variável INTEIRA um número de 1 a 12 e mostrar o nome do mês correspondente.
-    // Caso o mês não existir, mostrar essa informação.
 
-    int mes;
+    int mes = 0;
 
     printf("Insira um numero de 1 a 12 para determinar um mes: ");
     scanf("%d", &mes);

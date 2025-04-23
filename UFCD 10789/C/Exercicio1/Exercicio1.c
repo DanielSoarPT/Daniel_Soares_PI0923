@@ -1,10 +1,10 @@
+// Desenvolva um programa que assuma uma entrada em Segundos e transforme em Horas, Minutos e Segundos.
+
 #include <stdio.h>
 
 int main(){
 
-    // Desenvolva um programa que assuma uma entrada em Segundos e transforme em Horas, Minutos e Segundos.
-
-    int segundos;
+    int segundos = 0;
 
     printf("Insira a quantidade de segundos: ");
     scanf("%d", &segundos);

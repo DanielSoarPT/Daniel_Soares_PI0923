@@ -1,10 +1,14 @@
+// Fazer um programa que analise 3 valores inteiros (atravï¿½s das variï¿½veis num1, num2 e num3),e informa qual o maior e qual o menor deles
+
 #include <stdio.h>
 
 int main(){
 
-    // Fazer um programa que analise 3 valores inteiros (através das variáveis num1, num2 e num3),e informa qual o maior e qual o menor deles
-
-    int num1, num2, num3;
+    int num1 = 0;
+    int num2 = 0;
+    int num3 = 0;
+    int maior = 0;
+    int menor = 0;
 
     printf("Insira o primeiro numero: ");
     scanf("%d", &num1);
@@ -15,8 +19,8 @@ int main(){
     printf("\nInsira o terceiro numero: ");
     scanf("%d", &num3);
 
-    int maior = num1;
-    int menor = num1;
+    maior = num1;
+    menor = num1;
 
     if(num2>maior){
         maior = num2;

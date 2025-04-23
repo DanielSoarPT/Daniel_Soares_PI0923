@@ -1,10 +1,11 @@
+// Crie 2 variaveis (num1 e num2) e leia o valor para cada um deles. Mostre os valores de forma crescente e decrescente.
+
 #include <stdio.h>
 
 int main(){
 
-    // Crie 2 variáveis (num1 e num2) e leia o valor para cada um deles. Mostre os valores de forma crescente e decrescente.
-
-    int num1, num2;
+    int num1 = 0;
+    int num2 = 0;
 
     printf("Insira o primeiro numero: ");
     scanf("%d", &num1);

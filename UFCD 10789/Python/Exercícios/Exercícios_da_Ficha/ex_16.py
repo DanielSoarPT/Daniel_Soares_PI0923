@@ -10,8 +10,6 @@ for i in range(30):
 
             if num < 1 or num > 50:
                 print("\nO número tem que ser entre 1 e 50")
-            elif num % 2 != 0:
-                print("\nO número tem que ser par")
             else:
                 nums.append(num)
                 print(f"\nNúmero {num} adicionado.")

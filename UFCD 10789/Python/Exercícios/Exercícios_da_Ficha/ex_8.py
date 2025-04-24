@@ -1,13 +1,9 @@
 # Faça um algoritmo que gere a seguinte série: 10, 20, 30, 40, ..... 980, 990, 1000.e outro a fazer 15, 25, 35, 985, 995.(dois ciclos)
 
-i = 10
-j = 15
-
-while i<=1000 :
-    print(j)
+for i in range(10, 1001, 10):
     print(i)
-    i += 10
-    if j != 995:
-        j += 10
-    
+
+for i in range(15, 996, 10):
+    print(i)
+
 print("\nFim\n")

@@ -4,7 +4,7 @@ num = 0
 media = 0
 notas = []
 
-while num != 10:
+for i in range(1, 11):
     try:
         nota = int(input("Insira uma nota de um aluno: "))
     except ValueError:
@@ -13,12 +13,9 @@ while num != 10:
     
     notas.append(nota)
     num += 1
-    
-num = 0
 
 for i in notas:
     media += i
-    num += 1
 
 media = media / num
 

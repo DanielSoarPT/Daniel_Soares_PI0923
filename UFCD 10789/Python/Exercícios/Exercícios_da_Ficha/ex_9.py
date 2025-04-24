@@ -10,10 +10,8 @@ while i == True:
         print("\nInsira um numero valido!\n")
         continue
 
-    while num < 1 or num > 100:
-        print("\nO numero tem que estar entre os valores 1 e 100.\n")
-        break
-
     if num >= 1 and num <=100:
         i = False
         print("\nO valor esta entre 1 e 100.\n")
+    else:
+        print("\nO numero não esta entre 1 e 100.\n")

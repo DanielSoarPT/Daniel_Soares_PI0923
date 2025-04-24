@@ -2,14 +2,12 @@
 
 pares = []
 impares = []
-num = 0
 
-while num/2!=30:
+for num in range(1,61):
     if num % 2 == 0:
         pares.append(num)
     else:
         impares.append(num)
-    num += 1
         
 print("Os 30 primeiros numeros pares são: ")
 print(pares)

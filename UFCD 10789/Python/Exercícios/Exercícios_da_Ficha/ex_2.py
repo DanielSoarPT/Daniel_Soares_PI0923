@@ -1,9 +1,10 @@
 # Ler 10 números, e determinar se o número par e número impar.
 
+num = 0
 pares = []
 impares = []
 
-for num in range(1, 11):
+while num!= 10:
     try:
         inserir = int(input("Insira um numero: "))
     except ValueError:
@@ -14,6 +15,7 @@ for num in range(1, 11):
         pares.append(inserir)
     else:
         impares.append(inserir)
+    num += 1
     
 print("\nNumeros pares inseridos: ")
 print(pares)

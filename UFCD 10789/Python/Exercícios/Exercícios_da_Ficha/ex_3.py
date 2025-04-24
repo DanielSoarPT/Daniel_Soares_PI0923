@@ -4,7 +4,7 @@ num = 0
 media = 0
 notas = []
 
-for i in range(1, 11):
+while num != 10:
     try:
         nota = int(input("Insira uma nota de um aluno: "))
     except ValueError:

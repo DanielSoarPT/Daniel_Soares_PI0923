@@ -13,6 +13,6 @@ while True:
         if (num % i == 0):
             divisores.append(i)
 
-    print(f'O números de divisores: {divisores}')
+    print(f'Os divisores do número: {divisores}')
 
     break

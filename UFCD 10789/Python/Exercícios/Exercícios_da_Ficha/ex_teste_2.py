@@ -85,6 +85,12 @@ while True:
         numCli += 1
         
     elif esc == '2':
+        
+        if not clientes:
+            clear()
+            print("- Ainda não existem clientes! -")
+            continue
+        
         index = 0
         clear()
         
@@ -122,6 +128,12 @@ while True:
                 index = len(clientes) - 1
             
     elif esc == '3':
+        
+        if not clientes:
+            clear()
+            print("- Ainda não existem clientes! -")
+            continue
+        
         clear()
         while True:
             try:

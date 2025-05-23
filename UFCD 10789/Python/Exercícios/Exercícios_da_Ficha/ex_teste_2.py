@@ -1,6 +1,6 @@
 import os
 
-numCli = 1  # Variável global que começa com 1
+numCli = 1
 clientes = []
 
 def clear():
@@ -89,6 +89,7 @@ def listarClientes():
     if not clientes:
         clear()
         print("- Ainda não existem clientes! -")
+        return
         
     index = 0
     clear()
@@ -131,6 +132,7 @@ def procurarCliente():
     if not clientes:
         clear()
         print("- Ainda não existem clientes! -")
+        return
     
     clear()
     while True:

@@ -42,6 +42,12 @@ import os
 livs = []
 cont = 0
 
+livro = {
+    "nome": "",
+    "autor": "",
+    "ano": ""
+}
+
 def clear():
     os.system("cls")
 
@@ -111,7 +117,8 @@ def adicionarLivro():
             print("- Insira um ano! -\n")
             continue
     
-    clear() 
+    clear()
+    
     livro = {
         "nome": nome,
         "autor": autor,
@@ -210,8 +217,12 @@ def excluirLivro():
     clear()
     while True:
         try:
-            print("- Insira o número do livro que quer excluir. -\n")
+            print("- Insira o número do livro que quer excluir (0 para sair). -\n")
             num = int(input(">> "))
+            
+            if num == 0:
+                clear()
+                break
 
             if num < 1 or num > len(livs):
                 clear()
@@ -228,10 +239,10 @@ def excluirLivro():
             print("- Insira um número válido! -\n")
             continue
 
-def pegarTitulo(livro):
+def encontrarTitulo(livro):
     return livro['nome'].lower()
 
-def pegarAutor(livro):
+def encontrarAutor(livro):
     return livro['autor'].lower()
 
 def ordenarLivros():
@@ -248,12 +259,12 @@ def ordenarLivros():
         opc = input(">> ")
 
         if opc == '1':
-            livs.sort(key=pegarTitulo)
+            livs.sort(key=encontrarTitulo)
             clear()
             print("- Livros ordenados por título! -\n")
             break
         elif opc == '2':
-            livs.sort(key=pegarAutor)
+            livs.sort(key=encontrarAutor)
             clear()
             print("- Livros ordenados por autor! -\n")
             break

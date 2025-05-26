@@ -183,14 +183,15 @@ def procurarLivro():
                 for livro in livs:
                     if livro['autor'] == autor_proc:
                         print(f"+ LIVRO {i} +\n\n- Nome: {livro['nome']}\n- Autor: {livro['autor']}\n- Data: {livro['ano']}\n")
-                        achou = True
+                        sair = True
                         i += 1
 
-                if not achou:
-                    clear()
-                    print("- Livro não encontrado! -\n")
-                else:
+                if sair == True:
                     break
+                
+                clear()
+                print("- Livro não encontrado! -\n")
+                break
         elif opc == '0':
             clear()
             break
